@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "d930b778-cacf-4a9a-a18e-45dc3da3f7e4",
+		"name": "Basic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32123991"
+	},
+	"item": [
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/v1/notes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/v1/notes/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"notes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "content",
+							"value": "Phuc la mot dua kho khao",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/v1/notes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/v1/notes/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"notes",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/v1/notes/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"v1",
+						"notes",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

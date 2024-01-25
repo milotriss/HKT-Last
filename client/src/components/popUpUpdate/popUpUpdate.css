@@ -1,0 +1,36 @@
+.popUpUpdateOverlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popUpUpdateOverlay .popUpUpdate {
+    width: 400px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.popUpUpdateOverlay .popUpUpdate textarea {
+    width: 100%;
+    height: 80px;
+    resize: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.popUpUpdateOverlay .popUpUpdate button {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+    background-color: #fff;
+}
+.popUpUpdateOverlay .popUpUpdate button:hover {
+    background-color: #000;
+    color: #fff;
+}

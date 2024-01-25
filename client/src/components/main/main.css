@@ -1,0 +1,101 @@
+/* Main */
+main {
+    height: 100vh;
+    width: 100vw;
+    padding: 30px;
+    background-color: #E6E5E5;
+}
+main .enterNotes {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .enterNotes .enterGroup {
+    height: 200px;
+    width: 20%;
+    background-color: #fff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+}
+main .enterNotes .enterGroup h2 {
+    font-size: 25px;
+    color: var(--text);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+main .enterNotes .enterGroup .enterNote {
+    width: 100%;
+    height: 100px;
+}
+main .enterNotes .enterGroup .enterNote textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+main .enterNotes .enterGroup .enterNote textarea:focus {
+    border: 1px solid var(--primary);
+}
+main .enterNotes .enterGroup .iconEnter {
+    position: absolute;
+    bottom: -20px;
+    right: 30px;
+    font-size: 40px;
+    color: var(--primary);
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+main .enterNotes .enterGroup .iconEnter:hover {
+    transform: scale(1.2);
+}
+
+
+
+main .noteItems {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+main .noteItems .noteItem {
+    padding: 20px;
+    width: 19%;
+    max-height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+main .noteItems .noteItem .noteItemActions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: flex-end;
+}
+main .noteItems .noteItem p {
+    font-size: 18px;
+}
+main .noteItems .noteItem .noteItemActions span {
+    color: var(--text);
+    font-size: 14px;
+}
+main .noteItems .noteItem .noteItemActions .iconNote {
+    font-size: 25px;
+    color: var(--primary);
+    cursor: pointer;
+}
+main .noteItems .noteItem .noteItemActions .iconNote:hover {
+    transform: scale(1.2);
+}
